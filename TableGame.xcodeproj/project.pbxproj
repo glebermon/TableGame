@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		33DFE150231F885D003E9358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE14F231F885D003E9358 /* AppDelegate.swift */; };
-		33DFE152231F885D003E9358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE151231F885D003E9358 /* ViewController.swift */; };
+		33DFE152231F885D003E9358 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE151231F885D003E9358 /* GameViewController.swift */; };
 		33DFE155231F885D003E9358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DFE153231F885D003E9358 /* Main.storyboard */; };
 		33DFE157231F885E003E9358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DFE156231F885E003E9358 /* Assets.xcassets */; };
 		33DFE15A231F885E003E9358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DFE158231F885E003E9358 /* LaunchScreen.storyboard */; };
+		33DFE162231F8B06003E9358 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE161231F8B06003E9358 /* GamesListViewController.swift */; };
+		33DFE16623201E81003E9358 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE16523201E81003E9358 /* GameModel.swift */; };
+		33DFE169232044BF003E9358 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE168232044BF003E9358 /* CustomSlider.swift */; };
+		33DFE16B232480F2003E9358 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE16A232480F2003E9358 /* Heroes.swift */; };
+		33DFE16D23293192003E9358 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DFE16C23293192003E9358 /* HeroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33DFE14C231F885D003E9358 /* TableGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DFE14F231F885D003E9358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33DFE151231F885D003E9358 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33DFE151231F885D003E9358 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		33DFE154231F885D003E9358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33DFE156231F885E003E9358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DFE159231F885E003E9358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33DFE15B231F885E003E9358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DFE161231F8B06003E9358 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		33DFE16523201E81003E9358 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		33DFE168232044BF003E9358 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		33DFE16A232480F2003E9358 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		33DFE16C23293192003E9358 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				33DFE14F231F885D003E9358 /* AppDelegate.swift */,
-				33DFE151231F885D003E9358 /* ViewController.swift */,
-				33DFE153231F885D003E9358 /* Main.storyboard */,
+				33DFE16723201E86003E9358 /* Model */,
+				33DFE16323201E3C003E9358 /* Controller */,
+				33DFE16423201E57003E9358 /* View */,
 				33DFE156231F885E003E9358 /* Assets.xcassets */,
 				33DFE158231F885E003E9358 /* LaunchScreen.storyboard */,
 				33DFE15B231F885E003E9358 /* Info.plist */,
 			);
 			path = TableGame;
+			sourceTree = "<group>";
+		};
+		33DFE16323201E3C003E9358 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33DFE161231F8B06003E9358 /* GamesListViewController.swift */,
+				33DFE151231F885D003E9358 /* GameViewController.swift */,
+				33DFE168232044BF003E9358 /* CustomSlider.swift */,
+				33DFE16C23293192003E9358 /* HeroViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33DFE16423201E57003E9358 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33DFE153231F885D003E9358 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33DFE16723201E86003E9358 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33DFE16523201E81003E9358 /* GameModel.swift */,
+				33DFE16A232480F2003E9358 /* Heroes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33DFE152231F885D003E9358 /* ViewController.swift in Sources */,
+				33DFE152231F885D003E9358 /* GameViewController.swift in Sources */,
+				33DFE16D23293192003E9358 /* HeroViewController.swift in Sources */,
+				33DFE169232044BF003E9358 /* CustomSlider.swift in Sources */,
+				33DFE16623201E81003E9358 /* GameModel.swift in Sources */,
+				33DFE16B232480F2003E9358 /* Heroes.swift in Sources */,
 				33DFE150231F885D003E9358 /* AppDelegate.swift in Sources */,
+				33DFE162231F8B06003E9358 /* GamesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
